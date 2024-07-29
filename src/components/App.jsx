@@ -1,14 +1,17 @@
 import { Profile } from './Profile/Profile';
+import { Statistics } from './Statistics/Statistics';
 
 import user from '../data/user.json';
+import statistics from '../data/data.json';
+
 const { username, tag, location, avatar, stats } = user;
 
 export const App = () => {
   return (
     <div
       style={{
-        // height: '100vh',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -25,6 +28,8 @@ export const App = () => {
         views={stats.views}
         likes={stats.likes}
       ></Profile>
+
+      <Statistics title="Upload stats" stats={statistics}></Statistics>
     </div>
   );
 };
