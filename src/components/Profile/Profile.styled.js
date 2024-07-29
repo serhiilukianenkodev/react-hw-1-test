@@ -1,53 +1,54 @@
-.profile {
+import styled from 'styled-components';
+
+export const Container = styled.div`
   min-width: 480px;
 
   margin-top: 30px;
   border: 5px solid gray;
   border-radius: 10px;
   overflow: hidden;
-}
+`;
 
-.description {
+export const Description = styled.div`
   text-align: center;
   padding: 36px;
-}
+`;
 
-.avatar {
+export const Avatar = styled.img`
   display: block;
   margin: 0 auto;
 
   display: block;
   border-radius: 50%;
   width: 200px;
-}
+`;
 
-.name {
+export const Name = styled.p`
   padding: 0;
   margin: 15px 0 0 0;
   font-weight: 700;
-}
+`;
 
-.tag {
+export const Tag = styled.p`
   margin: 15px 0 0 0;
   color: blueviolet;
-}
+`;
 
-.location {
+export const Location = styled.p`
   font-style: italic;
   margin: 15px 0 0 0;
-}
+`;
 
-.stats {
+export const Stats = styled.ul`
   display: flex;
   list-style: none;
   padding: 0;
   margin: 24px 0 0 0;
   background-color: #e0d9d9;
-}
+`;
 
-.stats li {
+export const StatItem = styled.li`
   text-align: center;
-  /* min-width: 33.3333%; */
   flex-grow: 1;
   display: flex;
 
@@ -58,12 +59,11 @@
   &:not(:last-child) {
     border-right: 2px solid darkgrey;
   }
-}
+`;
 
-.label {
+export const Label = styled.span`
   font-size: 24px;
-}
-
-.quantity {
+`;
+export const Quantity = styled.span`
   font-weight: bold;
-}
+`;
