@@ -23,7 +23,7 @@ export const Statistics = ({ title, stats }) => (
   </StatisticsSection>
 );
 
-Statistics.propType = {
+Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.exact({
@@ -33,5 +33,3 @@ Statistics.propType = {
     })
   ),
 };
-
-// { "id": "id-1", "label": ".docx", "percentage": 22 }
